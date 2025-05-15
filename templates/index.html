@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Tool Tạo Sitemap</title>
+    <meta charset="UTF-8">
+    <title>Tạo Sitemap</title>
 </head>
-<body>
-    <h2>Tạo sitemap.xml + sitemap.html</h2>
+<body style="font-family:sans-serif;padding:2em;">
+    <h2>Nhập danh sách URL (1 dòng mỗi URL)</h2>
     <form method="post">
-        <textarea name="urls" rows="15" cols="80" placeholder="Nhập mỗi URL trên 1 dòng..."></textarea><br><br>
-        <button type="submit">Tạo và Tải xuống</button>
+        <textarea name="urls" rows="15" cols="80" placeholder="https://domain.com/page1..."></textarea><br><br>
+        <button type="submit">Tạo sitemap</button>
     </form>
+    <p>Sau khi tạo xong, file sitemap sẽ được ghi vào <code>/static/</code></p>
 </body>
 </html>
